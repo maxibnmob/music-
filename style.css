@@ -1,0 +1,101 @@
+﻿.container {
+    display: grid;
+    grid-gap: 10px;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 630px 90px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+   background-color: #000000
+}
+div.menu p{
+  color: white;  
+}
+
+.content {
+    grid-area: c;
+
+}
+
+.footer {
+   grid-area: f;
+background-color: #8B0000;
+}
+
+div.footer p{
+color: white;
+}
+
+
+.con1{
+    display: flex;
+    justify-content: center;
+}
+.con2{
+    width:98%;
+}
+
+
+.master{
+    
+    overflow: hidden;
+}
+
+
+
+div.scroll {
+    background-color: #A60C00;
+    overflow: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+div.scroll a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+div.scroll a:hover {
+    background-color: #DCDCDC;
+}
+
+
+@media screen and (max-width: 995px) {  
+    .container {  
+    grid-template-areas:  
+            "m m m m h h h h h h h h"  
+            "m m m m c c c c c c c c"  
+            "f f f f f f f f f f f f";}  
+}
+
+
+body {
+            background: url(back.jpg);
+            background-size: 100%;
+        }
+
+
+        fieldset{
+          background-color: #DCDCDC;  
+        }
+
+        .f1{
+  width: 25%;  
+  float: left;
+}
+.f2{
+  width: 45%; 
+  float: right; 
+}
